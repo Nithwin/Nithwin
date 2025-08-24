@@ -87,6 +87,8 @@ Computer vision project. (YOLO + Python = OpenCV)
   <img src="https://streak-stats.demolab.com?user=Nithwin&theme=highcontrast&hide_border=true" height="160" alt="streak"/>
 </p>
 
+
+
 ---
 
 ## 📊 Developer Metrics  
@@ -98,7 +100,10 @@ Computer vision project. (YOLO + Python = OpenCV)
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Nithwin&theme=matrix&no-frame=true&row=1&column=6" alt="trophies"/>
+  <img
+    src="https://github-profile-trophy.vercel.app/?username=vmnithwin&theme=matrix&no-frame=true&no-bg=true&row=1&column=6&margin-w=10&margin-h=10"
+    alt="GitHub Profile Trophies - vmnithwin"
+/>
 </p>
 
 ---
