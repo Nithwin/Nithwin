@@ -101,11 +101,6 @@ Computer vision project. (YOLO + Python = OpenCV)
   <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Nithwin&theme=radical" height="140" />
 </p>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nithwin&theme=matrix" />
-</p>
-
-
 ---
 
 ## 🧭 Roadmap & Learning
