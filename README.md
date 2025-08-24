@@ -79,15 +79,17 @@ Computer vision project. (YOLO + Python = OpenCV)
 ## 📈 GitHub Analytics  
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Nithwin&show_icons=true&count_private=true&theme=radical&hide_border=true" height="160" alt="stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nithwin&layout=compact&theme=tokyonight&hide_border=true" height="160" alt="top langs"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nithwin&theme=radical" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=Nithwin&theme=highcontrast&hide_border=true" height="160" alt="streak"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nithwin&theme=radical" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Nithwin&theme=radical" />
 </p>
 
-
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nithwin&theme=radical" />
+</p>
 
 ---
 
@@ -100,11 +102,9 @@ Computer vision project. (YOLO + Python = OpenCV)
 </p>
 
 <p align="center">
-  <img
-    src="https://github-profile-trophy.vercel.app/?username=vmnithwin&theme=matrix&no-frame=true&no-bg=true&row=1&column=6&margin-w=10&margin-h=10"
-    alt="GitHub Profile Trophies - vmnithwin"
-/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nithwin&theme=matrix" />
 </p>
+
 
 ---
 
