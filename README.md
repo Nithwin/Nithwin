@@ -76,7 +76,7 @@ Computer vision project. (YOLO + Python = OpenCV)
 ---
 
 
-## 📈 GitHub Analytics
+## 📈 GitHub Analytics  
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Nithwin&show_icons=true&count_private=true&theme=radical&hide_border=true" height="160" alt="stats"/>
@@ -85,6 +85,20 @@ Computer vision project. (YOLO + Python = OpenCV)
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=Nithwin&theme=highcontrast&hide_border=true" height="160" alt="streak"/>
+</p>
+
+---
+
+## 📊 Developer Metrics  
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nithwin&theme=radical" height="140" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Nithwin&theme=radical" height="140" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Nithwin&theme=radical" height="140" />
+</p>
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Nithwin&theme=matrix&no-frame=true&row=1&column=6" alt="trophies"/>
 </p>
 
 ---
