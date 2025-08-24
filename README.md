@@ -65,12 +65,12 @@
 ## 📈 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=vmnithwin&show_icons=true&count_private=true&theme=radical&hide_border=true" height="160" alt="stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=vmnithwin&layout=compact&theme=tokyonight&hide_border=true" height="160" alt="top langs"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=Nithwin&show_icons=true&count_private=true&theme=radical&hide_border=true" height="160" alt="stats"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nithwin&layout=compact&theme=tokyonight&hide_border=true" height="160" alt="top langs"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=vmnithwin&theme=highcontrast&hide_border=true" height="160" alt="streak"/>
+  <img src="https://streak-stats.demolab.com?user=Nithwin&theme=highcontrast&hide_border=true" height="160" alt="streak"/>
 </p>
 
 ---
