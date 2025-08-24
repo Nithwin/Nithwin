@@ -1,7 +1,7 @@
 <div align="center">
 
   <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=vmnithwin&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="vmnithwin's Trophies"/>
+    <img src="https://github-profile-trophy.vercel.app/?username=Nithwin&theme=radical&no-frame=true&no-bg=true&margin-w=4" alt="Nithwin's Trophies"/>
   </a>
 
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=28&pause=1000&color=20C20E&center=true&vCenter=true&width=600&lines=Hi%2C+I'm+Nithwin+%F0%9F%91%8B;Full+Stack+Developer+%7C+C%2B%2B+Enthusiast;React+%2B+Next.js+%2B+Firebase;Building+Scalable+Solutions" alt="Typing SVG" />
