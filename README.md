@@ -30,6 +30,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7E01D?style=for-the-badge&logo=javascript&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 ### Frontend
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000)
@@ -48,19 +49,32 @@
 ![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000)
 ![Qt](https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white)
+![UI/UX Design](https://img.shields.io/badge/UI%2FUX-FF69B4?style=for-the-badge&logo=figma&logoColor=white)
 
 ---
 
-## 🚀 Featured Projects
-- **Grammoro** — Exam & Student Dashboard (Next.js + Firebase)  
-  `LSRW skills, analytics, admin tools`
-- **Student Information System** — Staff & student management mobile app  
-- **Qt Desktop Apps** — Calculator, Notepad, File Explorer, Custom Browser (C++)  
-- **ID Card Detection (IEEE)** — Computer vision project
+## 🚀 Featured Projects  
 
-> 🔗 Pin key repos to your profile for quick access!
+### 🌐 Portfolio
+🔗 [nithwin.xyz](https://nithwin.xyz) — My personal portfolio showcasing projects, blogs & skills.  
 
+### 🍇 RizzBerry  
+🔗 [rizzberry.vercel.app](https://rizzberry.vercel.app) — Fun web project exploring creativity and full stack skills.  
+
+### 📚 Grammoro  
+Exam & Student Dashboard (Next.js + Firebase)  
+`LSRW skills, analytics, admin tools`  
+
+### 🎓 Student Information System  
+Staff & student management mobile app. (React Native + Nativewind)
+
+### 💻 Qt Desktop Apps  
+Calculator, Notepad, File Explorer, Custom Browser (C++). 
+
+### 🪪 ID Card Detection   
+Computer vision project. (YOLO + Python = OpenCV) 
 ---
+
 
 ## 📈 GitHub Analytics
 
