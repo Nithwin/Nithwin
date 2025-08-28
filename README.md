@@ -18,7 +18,7 @@
 ## 👋 About Me
 - 🚀 Aspiring **Software Developer** focused on **Full Stack** (React/Next.js/Firebase) and **System Design**  
 - 💻 Competitive programmer using **C++**  
-- 🧠 Learning **OS (C++ + Assembly)** and **backend architectures**  
+- 🧠 Learning **OS (C++)** and **backend architectures**  
 - 🎯 Goal: Crack **Google SDE** and build production-grade apps
 
 ---
