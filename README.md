@@ -2,25 +2,10 @@
 <!-- Theme: Google Search / Material Design -->
 
 <div align="center">
-  <a href="https://nithwin.xyz">
-    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" width="200" />
+  <!-- Dynamic Typing Intro -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Google+Sans&weight=700&size=30&duration=3000&pause=1000&color=4285F4&center=true&vCenter=true&width=800&lines=Hi%2C+I'm+Nithwin+%F0%9F%91%8B;Full+Stack+Developer+%26+System+Enthusiast;Building+Scalable+Applications;C%2B%2B+%7C+React+%7C+Next.js+%7C+Cloud" alt="Typing SVG" />
   </a>
-  <br>
-  <!-- Search Bar Mockup -->
-  <div style="background: #303134; padding: 10px 20px; border-radius: 24px; display: inline-flex; align-items: center; width: 400px; border: 1px solid #5f6368;">
-    <span style="color: #9aa0a6; margin-right: 10px;">🔍</span>
-    <code style="color: #e8eaed; font-family: 'Google Sans', sans-serif;">Software Development Engineer Nithwin</code>
-  </div>
-</div>
-
-<br />
-
-<!-- Navigation Tabs (Google Style) -->
-<div align="center">
-  <a href="#-about-me"><img src="https://img.shields.io/badge/All-8AB4F8?style=flat&logo=google&logoColor=white&labelColor=202124" alt="All"></a>
-  <a href="#-featured-projects"><img src="https://img.shields.io/badge/Projects-9aa0a6?style=flat&labelColor=202124" alt="Projects"></a>
-  <a href="#-technical-arsenal"><img src="https://img.shields.io/badge/Stack-9aa0a6?style=flat&labelColor=202124" alt="Stack"></a>
-  <a href="mailto:vmnithwin@gmail.com"><img src="https://img.shields.io/badge/Contact-9aa0a6?style=flat&labelColor=202124" alt="Contact"></a>
 </div>
 
 <br />
