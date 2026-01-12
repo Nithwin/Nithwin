@@ -12,8 +12,8 @@
 
 <!-- Main Content -->
 <table>
-  <tr>
-    <td width="65%" valign="top">
+<tr>
+<td width="65%" valign="top">
 
 ### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> About Me
 > <b style="color: #4285F4">Nithwin</b> is an aspiring **SDE** preparing for top-tier tech roles. 
@@ -24,8 +24,8 @@
 - 🎯 **Goal**: **Google SDE** (L3/L4).
 - ⚡ **Vibe**: "Building discipline, chasing mastery."
 
-    </td>
-    <td width="35%" valign="top">
+</td>
+<td width="35%" valign="top">
 
 ### 🌐 Connect
 <div align="left">
@@ -42,8 +42,8 @@
   </a>
 </div>
 
-    </td>
-  </tr>
+</td>
+</tr>
 </table>
 
 ---
