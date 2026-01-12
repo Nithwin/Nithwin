@@ -1,73 +1,78 @@
 <!-- Nithwin's GitHub Profile -->
-<!-- Theme: Academic / Google Style (Clean, Structured, Professional) -->
+<!-- Theme: Google Search / Material Design -->
 
 <div align="center">
-  <!-- Dynamic Typing Intro -->
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Google+Sans&weight=700&size=30&duration=3000&pause=1000&color=4285F4&center=true&vCenter=true&width=800&lines=Hi%2C+I'm+Nithwin+%F0%9F%91%8B;Full+Stack+Developer+%26+System+Enthusiast;Building+Scalable+Applications;C%2B%2B+%7C+React+%7C+Next.js+%7C+Cloud" alt="Typing SVG" />
-  </a>
-</div>
-
-<div align="center">
-  <!-- Socials - Google Colors -->
-  <a href="mailto:vmnithwin@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail" height="25"/>
-  </a>
-  <a href="https://linkedin.com/in/nithwin-v-m">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" height="25"/>
-  </a>
   <a href="https://nithwin.xyz">
-    <img src="https://img.shields.io/badge/Portfolio-34A853?style=flat-square&logo=firefox&logoColor=white" alt="Portfolio" height="25"/>
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" width="200" />
   </a>
+  <br>
+  <!-- Search Bar Mockup -->
+  <div style="background: #303134; padding: 10px 20px; border-radius: 24px; display: inline-flex; align-items: center; width: 400px; border: 1px solid #5f6368;">
+    <span style="color: #9aa0a6; margin-right: 10px;">🔍</span>
+    <code style="color: #e8eaed; font-family: 'Google Sans', sans-serif;">Software Development Engineer Nithwin</code>
+  </div>
 </div>
 
 <br />
 
-<!-- Main Content Grid -->
-<!-- Main Content Grid -->
+<!-- Navigation Tabs (Google Style) -->
 <div align="center">
-  <h2>👨‍💻 About Me</h2>
-  <p>
-    I am an aspiring <b>Software Development Engineer</b> with a strong foundation in <b>Systems Programming (C++)</b> and <b>Full Stack Web Development</b>. I love building tools that are not just functional but also visually stunning and performance-optimized.
-  </p>
-  <ul align="left">
-    <li>🔭 Working on <b>distributed systems</b> and <b>high-concurrency</b> applications.</li>
-    <li>🎓 Mastering <b>DSA</b>, <b>Operating Systems</b>, and <b>Backend Architecture</b>.</li>
-    <li>🚀 Goal: Leading engineering at a top-tier tech firm (Google SDE).</li>
-    <li>⚡ Fun fact: I build custom <b>C++</b> tools for my daily productivity.</li>
-  </ul>
+  <a href="#-about-me"><img src="https://img.shields.io/badge/All-8AB4F8?style=flat&logo=google&logoColor=white&labelColor=202124" alt="All"></a>
+  <a href="#-featured-projects"><img src="https://img.shields.io/badge/Projects-9aa0a6?style=flat&labelColor=202124" alt="Projects"></a>
+  <a href="#-technical-arsenal"><img src="https://img.shields.io/badge/Stack-9aa0a6?style=flat&labelColor=202124" alt="Stack"></a>
+  <a href="mailto:vmnithwin@gmail.com"><img src="https://img.shields.io/badge/Contact-9aa0a6?style=flat&labelColor=202124" alt="Contact"></a>
 </div>
+
+<br />
+
+<!-- Main Content -->
+<table>
+  <tr>
+    <td width="65%" valign="top">
+
+### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> About Me
+> <b style="color: #4285F4">Nithwin</b> is an aspiring **SDE** preparing for top-tier tech roles. 
+> Specialized in <b style="color: #EA4335">System Design</b>, <b style="color: #FBBC05">C++</b>, and <b style="color: #34A853">Full Stack Web</b>.
+
+- 🔭 **Current Focus**: High-concurrency systems & Distributed Architecture.
+- 🎓 **Learning**: Operating Systems Internals & Advanced Algorithms.
+- 🎯 **Goal**: **Google SDE** (L3/L4).
+- ⚡ **Vibe**: "Building discipline, chasing mastery."
+
+    </td>
+    <td width="35%" valign="top">
+
+### 🌐 Connect
+<div align="left">
+  <a href="mailto:vmnithwin@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" height="25"/>
+  </a>
+  <br>
+  <a href="https://linkedin.com/in/nithwin-v-m">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" height="25"/>
+  </a>
+  <br>
+  <a href="https://nithwin.xyz">
+    <img src="https://img.shields.io/badge/Portfolio-34A853?style=flat-square&logo=google-chrome&logoColor=white" height="25"/>
+  </a>
+</div>
+
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 🛠️ Technical Arsenal
+## 🛠 Technical Arsenal
 
-<div align="left">
+<!-- Google Colors Bar -->
+![Bar](https://user-images.githubusercontent.com/39329061/233055375-7f9996d9-3e3d-4c31-9f9b-648b293d0f41.png)
 
-### **Languages**
-<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
-<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=白" />
-<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
-<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+<div align="center">
 
-### **Frontend & UI**
-<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
-<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
-<img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
-<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />
-
-### **Backend & Cloud**
-<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
-<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
-<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
-
-### **Tools & Systems**
-<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
-<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
-<img src="https://img.shields.io/badge/Qt-41CD52?style=flat-square&logo=qt&logoColor=white" />
-<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
+| **Languages** | **Frontend** | **Backend** | **Tools** |
+|:---:|:---:|:---:|:---:|
+| <img src="https://skillicons.dev/icons?i=cpp,java,python" /> | <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" /> | <img src="https://skillicons.dev/icons?i=nodejs,firebase,postgres" /> | <img src="https://skillicons.dev/icons?i=git,linux,docker" /> |
 
 </div>
 
@@ -75,29 +80,67 @@
 
 ## 🚀 Featured Projects
 
-| Project | Description | Tech Stack |
-| :--- | :--- | :--- |
-| **ShadowCoders** | ⚡ **High-performance exam platform.** Handles concurrent code submissions with an auto-scaling backend and real-time grading system. | `Next.js` `Prisma` `PostgreSQL` |
-| **ShadowGame** | 🎮 **Immersive Web Experience.** An Awwwards-style dark-themed interactive game site featuring advanced GSAP animations and premium UI. | `React` `GSAP` `Framer Motion` |
-| **RizzBerry** | 🍇 **Creative Portfolio.** A playground for experimental web designs, exploring novel UI/UX concepts and full-stack integration. | `Next.js` `Vercel` |
-| **Qt Suite** | 🖥️ **System Utilities.** A collection of native desktop tools including a custom File Explorer, Browser, and Text Editor built for speed. | `C++` `Qt Framework` |
+<!-- Project Cards using Table for layout -->
+<table>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🔍 ShadowCoders</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/Next.js-black?style=flat-square&logo=next.js" />
+        <img src="https://img.shields.io/badge/Prisma-blue?style=flat-square&logo=prisma" />
+      </div>
+      <p align="center">
+        High-performance exam platform handling <b>concurrent submissions</b> with real-time grading and auto-scaling architecture.
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🎮 ShadowGame</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/React-blue?style=flat-square&logo=react" />
+        <img src="https://img.shields.io/badge/GSAP-green?style=flat-square&logo=greensock" />
+      </div>
+      <p align="center">
+        <b>Awwwards-style</b> immersive experience. Dark-themed interactive site with complex animations and premium UI.
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%">
+      <h3 align="center">🍇 RizzBerry</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/Creative-purple?style=flat-square" />
+        <img src="https://img.shields.io/badge/Web-Vercel?style=flat-square&logo=vercel" />
+      </div>
+      <p align="center">
+        Experimental portfolio playground exploring <b>novel UI/UX concepts</b> and creative full-stack integrations.
+      </p>
+    </td>
+    <td width="50%">
+      <h3 align="center">🖥️ Qt Suite</h3>
+      <div align="center">
+        <img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus" />
+        <img src="https://img.shields.io/badge/Qt-41CD52?style=flat-square&logo=qt" />
+      </div>
+      <p align="center">
+        Native system utilities including a custom <b>File Explorer</b> and <b>Text Editor</b> built for extreme speed.
+      </p>
+    </td>
+  </tr>
+</table>
 
 ---
 
-## 📊 Analytics
+## 🧩 Contributions
 
-  <!-- Snake Animation -->
+<!-- Clean, single analytic as requested: The Snake -->
+<div align="center">
   <img src="https://raw.githubusercontent.com/Nithwin/Nithwin/output/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%"/>
-  <br/><br/>
-  
-  <p>
-    <img src="https://github-readme-stats.vercel.app/api?username=Nithwin&show_icons=true&theme=google&count_private=true&hide_border=true" height="150" />
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nithwin&layout=compact&theme=google&hide_border=true" height="150" />
-  </p>
 </div>
 
----
+<br>
 
-<p align="center">
-  <samp>Looking for a developer? <a href="mailto:vmnithwin@gmail.com"><b>Let's Talk</b></a></samp>
-</p>
+<div align="center">
+  <p style="color: #9aa0a6">
+    © 2026 Nithwin • Built with <span style="color: #EA4335">❤</span> & <span style="color: #4285F4">Code</span>
+  </p>
+</div>
