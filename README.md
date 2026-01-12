@@ -50,14 +50,11 @@
 
 ## 🛠 Technical Arsenal
 
-<!-- Google Colors Bar -->
-![Bar](https://user-images.githubusercontent.com/39329061/233055375-7f9996d9-3e3d-4c31-9f9b-648b293d0f41.png)
-
 <div align="center">
 
 | **Languages** | **Frontend** | **Backend** | **Tools** |
 |:---:|:---:|:---:|:---:|
-| <img src="https://skillicons.dev/icons?i=cpp,java,python" /> | <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind" /> | <img src="https://skillicons.dev/icons?i=nodejs,firebase,postgres" /> | <img src="https://skillicons.dev/icons?i=git,linux,docker" /> |
+| <img src="https://skillicons.dev/icons?i=cpp,java,python,ts,js" /> | <img src="https://skillicons.dev/icons?i=react,nextjs,tailwind,figma" /> | <img src="https://skillicons.dev/icons?i=nodejs,firebase,supabase,postgres,mysql" /> | <img src="https://skillicons.dev/icons?i=git,linux,qt" /> |
 
 </div>
 
