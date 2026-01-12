@@ -1,125 +1,103 @@
-<!-- Profile README for @vmnithwin -->
-<!-- Tip: Create a repo named exactly "vmnithwin" and put this README.md inside -->
+<!-- Nithwin's GitHub Profile -->
+<!-- Theme: Academic / Google Style (Clean, Structured, Professional) -->
 
-<!-- Banner / Typing Intro -->
-<p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=700&size=26&pause=800&center=true&vCenter=true&width=700&lines=Hi%2C+I'm+Nithwin+%F0%9F%91%8B;Full+Stack+Developer+%7C+C%2B%2B+Enthusiast;React+%2B+Next.js+%2B+Firebase;Preparing+for+Google+SDE+roles" alt="Typing SVG" />
-</p>
+<div align="center">
+  <!-- Dynamic Typing Intro -->
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Google+Sans&weight=700&size=30&duration=3000&pause=1000&color=4285F4&center=true&vCenter=true&width=800&lines=Hi%2C+I'm+Nithwin+%F0%9F%91%8B;Full+Stack+Developer+%26+System+Enthusiast;Building+Scalable+Applications;C%2B%2B+%7C+React+%7C+Next.js+%7C+Cloud" alt="Typing SVG" />
+  </a>
+</div>
 
-<!-- Quick Badges -->
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=vmnithwin&style=for-the-badge" alt="profile views" />
-  <a href="mailto:yvmnithwin@gmail.com"><img src="https://img.shields.io/badge/Email-Contact-red?style=for-the-badge&logo=gmail&logoColor=white" alt="email"/></a>
-  <a href="https://linkedin.com/in/nithwin-v-m"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="linkedin"/></a>
-</p>
+<div align="center">
+  <!-- Socials - Google Colors -->
+  <a href="mailto:vmnithwin@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Gmail" height="25"/>
+  </a>
+  <a href="https://linkedin.com/in/nithwin-v-m">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" height="25"/>
+  </a>
+  <a href="https://nithwin.xyz">
+    <img src="https://img.shields.io/badge/Portfolio-34A853?style=flat-square&logo=firefox&logoColor=white" alt="Portfolio" height="25"/>
+  </a>
+</div>
 
----
+<br />
 
-## 👋 About Me
-- 🚀 Aspiring **Software Developer** focused on **Full Stack** (React/Next.js/Firebase) and **System Design**  
-- 💻 Competitive programmer using **C++**  
-- 🧠 Learning **OS (C++)** and **backend architectures**  
-- 🎯 Goal: Crack **Google SDE** and build production-grade apps
-
----
-
-## 🛠️ Tech Stack
-
-### Languages
-![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7E01D?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-### Frontend
-![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=000)
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![TailwindCSS](https://img.shields.io/badge/Tailwind-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
-
-### Backend & DB
-![Node.js](https://img.shields.io/badge/Node.js-3C873A?style=for-the-badge&logo=node.js&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=000)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VSCode-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=000)
-![Qt](https://img.shields.io/badge/Qt-41CD52?style=for-the-badge&logo=qt&logoColor=white)
-![UI/UX Design](https://img.shields.io/badge/UI%2FUX-FF69B4?style=for-the-badge&logo=figma&logoColor=white)
+<!-- Main Content Grid -->
+<!-- Main Content Grid -->
+<div align="center">
+  <h2>👨‍💻 About Me</h2>
+  <p>
+    I am an aspiring <b>Software Development Engineer</b> with a strong foundation in <b>Systems Programming (C++)</b> and <b>Full Stack Web Development</b>. I love building tools that are not just functional but also visually stunning and performance-optimized.
+  </p>
+  <ul align="left">
+    <li>🔭 Working on <b>distributed systems</b> and <b>high-concurrency</b> applications.</li>
+    <li>🎓 Mastering <b>DSA</b>, <b>Operating Systems</b>, and <b>Backend Architecture</b>.</li>
+    <li>🚀 Goal: Leading engineering at a top-tier tech firm (Google SDE).</li>
+    <li>⚡ Fun fact: I build custom <b>C++</b> tools for my daily productivity.</li>
+  </ul>
+</div>
 
 ---
 
-## 🚀 Featured Projects  
+## 🛠️ Technical Arsenal
 
-### 🌐 Portfolio
-🔗 [nithwin.xyz](https://nithwin.xyz) — My personal portfolio showcasing projects, blogs & skills.  
+<div align="left">
 
-### 🍇 RizzBerry  
-🔗 [rizzberry.vercel.app](https://rizzberry.vercel.app) — Fun web project exploring creativity and full stack skills.  
+### **Languages**
+<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" />
+<img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=白" />
+<img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
 
-### 📚 Grammoro  
-Exam & Student Dashboard (Next.js + Firebase)  
-`LSRW skills, analytics, admin tools`  
+### **Frontend & UI**
+<img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=next.js&logoColor=white" />
+<img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" />
+<img src="https://img.shields.io/badge/Figma-F24E1E?style=flat-square&logo=figma&logoColor=white" />
 
-### 🎓 Student Information System  
-Staff & student management mobile app. (React Native + Nativewind)
+### **Backend & Cloud**
+<img src="https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white" />
+<img src="https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black" />
+<img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" />
+<img src="https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white" />
 
-### 💻 Qt Desktop Apps  
-Calculator, Notepad, File Explorer, Custom Browser (C++). 
+### **Tools & Systems**
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black" />
+<img src="https://img.shields.io/badge/Qt-41CD52?style=flat-square&logo=qt&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" />
 
-### 🪪 ID Card Detection   
-Computer vision project. (YOLO + Python = OpenCV) 
----
-
-
-## 📈 GitHub Analytics  
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nithwin&theme=radical" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nithwin&theme=radical" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Nithwin&theme=radical" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Nithwin&theme=radical" />
-</p>
+</div>
 
 ---
 
-## 📊 Developer Metrics  
+## 🚀 Featured Projects
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Nithwin&theme=radical" height="140" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Nithwin&theme=radical" height="140" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Nithwin&theme=radical" height="140" />
-</p>
+| Project | Description | Tech Stack |
+| :--- | :--- | :--- |
+| **ShadowCoders** | ⚡ **High-performance exam platform.** Handles concurrent code submissions with an auto-scaling backend and real-time grading system. | `Next.js` `Prisma` `PostgreSQL` |
+| **ShadowGame** | 🎮 **Immersive Web Experience.** An Awwwards-style dark-themed interactive game site featuring advanced GSAP animations and premium UI. | `React` `GSAP` `Framer Motion` |
+| **RizzBerry** | 🍇 **Creative Portfolio.** A playground for experimental web designs, exploring novel UI/UX concepts and full-stack integration. | `Next.js` `Vercel` |
+| **Qt Suite** | 🖥️ **System Utilities.** A collection of native desktop tools including a custom File Explorer, Browser, and Text Editor built for speed. | `C++` `Qt Framework` |
+
+---
+
+## 📊 Analytics
+
+  <!-- Snake Animation -->
+  <img src="https://raw.githubusercontent.com/Nithwin/Nithwin/output/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%"/>
+  <br/><br/>
+  
+  <p>
+    <img src="https://github-readme-stats.vercel.app/api?username=Nithwin&show_icons=true&theme=google&count_private=true&hide_border=true" height="150" />
+    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nithwin&layout=compact&theme=google&hide_border=true" height="150" />
+  </p>
+</div>
+
+---
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Nithwin&theme=matrix" />
+  <samp>Looking for a developer? <a href="mailto:vmnithwin@gmail.com"><b>Let's Talk</b></a></samp>
 </p>
-
-
----
-
-## 🧭 Roadmap & Learning
-- Master **DSA** (C++), **System Design**, **OS internals**
-- Build scalable **Full Stack** apps with real users
-- Improve **reasoning/aptitude** speed (<30s problems)
-
----
-
-## 📫 Connect
-<a href="mailto:vmnithwin@gmail.com"><img src="https://img.shields.io/badge/Gmail-Email_Me-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-<a href="https://linkedin.com/in/nithwin-v-m"><img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-
----
-
-## ⚡ Fun
-> “Building discipline, chasing mastery, and leveling up every single day.”
