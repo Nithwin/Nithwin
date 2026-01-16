@@ -76,7 +76,7 @@
       </p>
     </td>
     <td width="50%">
-      <h3 align="center">🎮 ShadowGame</h3>
+      <h3 align="center">🎮 ShadowGame - In development</h3>
       <div align="center">
         <img src="https://img.shields.io/badge/React-blue?style=flat-square&logo=react" />
         <img src="https://img.shields.io/badge/GSAP-green?style=flat-square&logo=greensock" />
