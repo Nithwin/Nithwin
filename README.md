@@ -123,6 +123,6 @@
 
 <div align="center">
   <p style="color: #9aa0a6">
-    © 2026 Nithwin • Built with <span style="color: #EA4335">❤</span> & <span style="color: #4285F4">Code</span>
+    © 2026 Nithwin • Built with <span style="color: #EA4335">❤</span> & <span style="color: #4285F4">Code.</span>
   </p>
 </div>
