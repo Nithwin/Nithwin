@@ -18,12 +18,6 @@
 ### <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> About Me
 > <b style="color: #4285F4">Nithwin</b> is an aspiring **SDE** preparing for top-tier tech roles. 
 > Specialized in <b style="color: #EA4335">System Design</b>, <b style="color: #FBBC05">C++</b>, and <b style="color: #34A853">Full Stack Web</b>.
-
-- 🔭 **Current Focus**: High-concurrency systems & Distributed Architecture.
-- 🎓 **Learning**: Operating Systems Internals & Advanced Algorithms.
-- 🎯 **Goal**: **Google SDE** (L3/L4).
-- ⚡ **Vibe**: "Building discipline, chasing mastery."
-
 </td>
 <td width="35%" valign="top">
 
