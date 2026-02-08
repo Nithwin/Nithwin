@@ -80,7 +80,7 @@ I'm a passionate Full Stack Developer with a knack for building robust backends 
 <br>
 <br>
 
-![Snake Animation](https://github.com/Nithwin/Nithwin/blob/output/github-contribution-grid-snake-dark.svg)
+![Snake Animation](https://raw.githubusercontent.com/Nithwin/Nithwin/output/github-contribution-grid-snake-dark.svg)
 
 </div>
 
