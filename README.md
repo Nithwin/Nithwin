@@ -42,11 +42,7 @@
 
 <br/><br/>
 
-<!-- ─── ACTIVITY GRAPH ─── -->
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Nithwin&bg_color=0a0a0f&color=a78bfa&line=7c3aed&point=06b6d4&area_color=7c3aed&area=true&hide_border=true&custom_title=contribution%20activity&title_color=4a4a6a&radius=6" width="100%" />
-
-<br/>
 
 <!-- ─── FOOTER ─── -->
 
