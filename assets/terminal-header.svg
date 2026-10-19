@@ -1,278 +1,238 @@
-<svg fill="none" viewBox="0 0 900 360" width="900" height="360" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+<svg fill="none" viewBox="0 0 900 370" width="100%" height="370" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Dark Architectural Cyberpunk Background -->
+    <linearGradient id="panelBg" x1="0" y1="0" x2="900" y2="370" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#07070A" />
+      <stop offset="50%" stop-color="#0B0B12" />
+      <stop offset="100%" stop-color="#050508" />
+    </linearGradient>
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+    <!-- Electric Lightning Conduit Gradient (Cyan to Electric Red/Orange) -->
+    <linearGradient id="electricGradient" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF">
+        <animate attributeName="stop-color" values="#00E5FF;#FF3B1D;#9D4EDD;#00E5FF" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#FF3B1D">
+        <animate attributeName="stop-color" values="#FF3B1D;#00E5FF;#FF3B1D;#9D4EDD" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#00E5FF">
+        <animate attributeName="stop-color" values="#00E5FF;#9D4EDD;#00E5FF;#FF3B1D" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
 
-        .terminal {
-          background: #0a0a0f;
-          border: 1px solid #1a1a2e;
-          border-radius: 12px;
-          overflow: hidden;
-          font-family: 'JetBrains Mono', 'Courier New', monospace;
-          box-shadow: 0 0 40px rgba(124, 58, 237, 0.08), 0 0 80px rgba(6, 182, 212, 0.04);
-        }
+    <linearGradient id="titleGrad" x1="0" y1="0" x2="350" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
 
-        .titlebar {
-          background: linear-gradient(90deg, #0f0f1a 0%, #12121f 100%);
-          padding: 10px 16px;
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          border-bottom: 1px solid #1a1a2e;
-        }
+    <linearGradient id="orangeFlame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF7552" />
+      <stop offset="50%" stop-color="#FF3B1D" />
+      <stop offset="100%" stop-color="#D91E00" />
+    </linearGradient>
 
-        .dot { width: 12px; height: 12px; border-radius: 50%; }
-        .dot-red { background: #ff5f57; }
-        .dot-yellow { background: #febc2e; }
-        .dot-green { background: #28c840; }
+    <!-- Neon Glow Filter -->
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3.5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
 
-        .titlebar-text {
-          color: #4a4a6a;
-          font-size: 11px;
-          margin-left: 8px;
-          letter-spacing: 0.5px;
-        }
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
 
-        .body {
-          padding: 24px 28px;
-          display: flex;
-          gap: 32px;
-        }
+    <!-- Background Hairline Grid Pattern -->
+    <pattern id="circuitGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#FFFFFF" stroke-opacity="0.025" stroke-width="1" />
+      <circle cx="0" cy="0" r="1.5" fill="#00E5FF" fill-opacity="0.15" />
+    </pattern>
+  </defs>
 
-        .left { flex: 1; }
-        .right { flex: 1; }
+  <style>
+    @keyframes lightningArc {
+      0% { stroke-dashoffset: 1600; opacity: 0.2; }
+      40% { opacity: 0.95; }
+      50% { stroke-dashoffset: 0; opacity: 1; }
+      55% { opacity: 0.3; }
+      60% { opacity: 0.9; }
+      100% { stroke-dashoffset: -1600; opacity: 0.2; }
+    }
 
-        .prompt { color: #7c3aed; font-size: 13px; }
-        .cmd { color: #06b6d4; font-size: 13px; }
-        .output { color: #8b8baa; font-size: 12px; line-height: 1.8; margin-top: 8px; }
-        .highlight { color: #a78bfa; font-weight: 700; }
-        .cyan { color: #06b6d4; }
-        .green { color: #34d399; }
-        .yellow { color: #fbbf24; }
-        .white { color: #e2e2f0; }
-        .dim { color: #4a4a6a; }
+    @keyframes pulseGlow {
+      0%, 100% { filter: drop-shadow(0 0 8px rgba(0, 229, 255, 0.45)); }
+      50% { filter: drop-shadow(0 0 20px rgba(255, 59, 29, 0.75)); }
+    }
 
-        .name {
-          font-size: 28px;
-          font-weight: 700;
-          background: linear-gradient(135deg, #a78bfa, #06b6d4);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-          margin-bottom: 4px;
-          animation: glow 3s ease-in-out infinite alternate;
-        }
+    @keyframes sparkFlicker {
+      0%, 100% { opacity: 0.1; transform: scale(0.9); }
+      15% { opacity: 0.9; transform: scale(1.15); }
+      30% { opacity: 0.2; }
+      75% { opacity: 1; transform: scale(1.1); }
+      85% { opacity: 0.4; }
+    }
 
-        @keyframes glow {
-          from { filter: drop-shadow(0 0 2px rgba(167, 139, 250, 0.3)); }
-          to { filter: drop-shadow(0 0 8px rgba(6, 182, 212, 0.4)); }
-        }
+    @keyframes cursorBlink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
 
-        .tagline {
-          color: #6a6a8a;
-          font-size: 12px;
-          margin-bottom: 16px;
-          font-style: italic;
-        }
+    .lightning-border {
+      stroke-dasharray: 200, 400;
+      animation: lightningArc 5s linear infinite;
+    }
 
-        .separator {
-          border: none;
-          height: 1px;
-          background: linear-gradient(90deg, transparent, #2a2a4a, transparent);
-          margin: 12px 0;
-        }
+    .flicker-spark {
+      animation: sparkFlicker 3.2s ease-in-out infinite;
+      transform-origin: center;
+    }
 
-        .stat-row {
-          display: flex;
-          justify-content: space-between;
-          font-size: 12px;
-          padding: 3px 0;
-        }
+    .cursor {
+      animation: cursorBlink 1s infinite;
+    }
+  </style>
 
-        .stat-label { color: #6a6a8a; }
-        .stat-value { color: #e2e2f0; }
+  <!-- Outer Window Shell -->
+  <rect x="2" y="2" width="896" height="366" rx="14" fill="url(#panelBg)" stroke="#161626" stroke-width="2" />
+  <!-- Hairline Blueprint Grid -->
+  <rect x="2" y="2" width="896" height="366" rx="14" fill="url(#circuitGrid)" />
 
-        .bar-container {
-          width: 100%;
-          height: 4px;
-          background: #1a1a2e;
-          border-radius: 2px;
-          margin-top: 4px;
-          overflow: hidden;
-        }
+  <!-- Animated Electric Superconductor Conduit (Rim Border) -->
+  <rect class="lightning-border" x="3" y="3" width="894" height="364" rx="13" fill="none" stroke="url(#electricGradient)" stroke-width="2.5" filter="url(#neonGlow)" />
 
-        .bar {
-          height: 100%;
-          border-radius: 2px;
-          animation: fillBar 2s ease-out forwards;
-        }
+  <!-- Window Header / Title Bar -->
+  <rect x="2" y="2" width="896" height="42" rx="14" fill="#0E0E18" />
+  <rect x="2" y="30" width="896" height="14" fill="#0E0E18" />
+  <line x1="2" y1="44" x2="898" y2="44" stroke="#1A1A2E" stroke-width="1.5" />
 
-        .bar-go { 
-          width: 0; 
-          background: linear-gradient(90deg, #00add8, #06b6d4); 
-          animation-delay: 0.5s;
-        }
-        .bar-cpp { 
-          width: 0; 
-          background: linear-gradient(90deg, #659ad2, #a78bfa); 
-          animation-delay: 0.8s;
-        }
-        .bar-py { 
-          width: 0; 
-          background: linear-gradient(90deg, #3776ab, #fbbf24); 
-          animation-delay: 1.1s;
-        }
+  <!-- Window Controls -->
+  <circle cx="24" cy="23" r="6" fill="#FF5F56" />
+  <circle cx="44" cy="23" r="6" fill="#FFBD2E" />
+  <circle cx="64" cy="23" r="6" fill="#27C93F" />
 
-        @keyframes fillBar {
-          to { width: 100%; }
-        }
+  <!-- Terminal Title & Architecture Badge -->
+  <text x="92" y="27" font-family="'JetBrains Mono', monospace, Consolas" font-size="12" font-weight="600" fill="#6B7280" letter-spacing="0.5">
+    nithwin@kinetic-v26:~//systems/core (go1.26 · cpp20 · yolo-ca)
+  </text>
+  <rect x="734" y="14" width="144" height="18" rx="9" fill="#131322" stroke="#252540" stroke-width="1" />
+  <circle cx="745" cy="23" r="3.5" fill="#00E5FF">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.8s" repeatCount="indefinite" />
+  </circle>
+  <text x="755" y="26" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#00E5FF" letter-spacing="0.5">SYSTEM ACTIVE</text>
 
-        .cursor-blink {
-          display: inline-block;
-          width: 8px;
-          height: 14px;
-          background: #7c3aed;
-          animation: blink 1s step-end infinite;
-          vertical-align: middle;
-          margin-left: 2px;
-        }
+  <!-- ================= LEFT: LIGHTNING MONOGRAM BADGE ================= -->
+  <g transform="translate(36, 76)">
+    <!-- Ambient Reactive Halo -->
+    <rect x="0" y="0" width="180" height="248" rx="18" fill="#090912" stroke="#1E1E34" stroke-width="1.5" />
+    <rect class="lightning-border" x="0" y="0" width="180" height="248" rx="18" fill="none" stroke="url(#electricGradient)" stroke-width="1.8" />
 
-        @keyframes blink {
-          50% { opacity: 0; }
-        }
+    <!-- Corner Circuit Targets -->
+    <path d="M 12 6 L 6 6 L 6 12" fill="none" stroke="#00E5FF" stroke-width="1.5" />
+    <path d="M 168 6 L 174 6 L 174 12" fill="none" stroke="#FF3B1D" stroke-width="1.5" />
+    <path d="M 12 242 L 6 242 L 6 236" fill="none" stroke="#00E5FF" stroke-width="1.5" />
+    <path d="M 168 242 L 174 242 L 174 236" fill="none" stroke="#FF3B1D" stroke-width="1.5" />
 
-        .status-dot {
-          display: inline-block;
-          width: 7px;
-          height: 7px;
-          border-radius: 50%;
-          background: #34d399;
-          animation: pulse 2s ease-in-out infinite;
-          margin-right: 6px;
-          vertical-align: middle;
-        }
+    <!-- Monogram N Structure (from portfolio logo) -->
+    <g transform="translate(25, 24) scale(0.25)" filter="url(#softGlow)">
+      <!-- Outer Squircle Badge Container -->
+      <rect x="20" y="20" width="472" height="472" rx="112" fill="#0E0E1A" stroke="#2B2B44" stroke-width="8" />
+      <rect x="26" y="26" width="460" height="460" rx="106" stroke="#FF3B1D" stroke-opacity="0.35" stroke-width="3" />
 
-        @keyframes pulse {
-          0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4); }
-          50% { opacity: 0.7; box-shadow: 0 0 0 4px rgba(52, 211, 153, 0); }
-        }
+      <!-- Monogram N with Flame Glow -->
+      <path
+        d="M 148 368 V 156 C 148 144 156 138 168 138 H 192 C 202 138 210 142 216 150 L 312 298 V 156 C 312 144 320 138 332 138 H 348 C 360 138 364 144 364 156 V 356 C 364 368 356 374 344 374 H 320 C 310 374 302 370 296 362 L 200 214 V 356 C 200 368 192 374 180 374 H 164 C 152 374 148 368 148 356 Z"
+        fill="url(#orangeFlame)"
+      />
+      <!-- Sheen Overlay -->
+      <path
+        d="M 148 240 V 156 C 148 144 156 138 168 138 H 192 C 202 138 210 142 216 150 L 312 298 V 156 C 312 144 320 138 332 138 H 348 C 360 138 364 144 364 156 V 230 Z"
+        fill="#FFFFFF"
+        fill-opacity="0.35"
+      />
+    </g>
 
-        .fade-in {
-          animation: fadeIn 0.8s ease-out forwards;
-          opacity: 0;
-        }
+    <!-- Electric Lightning Bolt Across Badge -->
+    <path
+      class="flicker-spark"
+      d="M 85 162 L 102 162 L 92 186 L 108 186 L 82 224 L 91 194 L 78 194 Z"
+      fill="#00E5FF"
+      filter="url(#neonGlow)"
+    />
 
-        .delay-1 { animation-delay: 0.2s; }
-        .delay-2 { animation-delay: 0.4s; }
-        .delay-3 { animation-delay: 0.6s; }
-        .delay-4 { animation-delay: 0.8s; }
-        .delay-5 { animation-delay: 1.0s; }
-        .delay-6 { animation-delay: 1.2s; }
+    <!-- Badge Subtitle -->
+    <text x="90" y="196" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#E2E8F0" letter-spacing="2">
+      NITHWIN
+    </text>
+    <text x="90" y="214" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8.5" font-weight="600" fill="#FF7552" letter-spacing="1.5">
+      KINETIC // 2026
+    </text>
+    <text x="90" y="230" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="8" fill="#6B7280" letter-spacing="0.5">
+      [IEEE · SYSTEMS]
+    </text>
+  </g>
 
-        @keyframes fadeIn {
-          to { opacity: 1; }
-        }
-      </style>
+  <!-- ================= RIGHT: HERO HEADLINE & LIVE TERMINAL ================= -->
+  <g transform="translate(242, 76)">
+    <!-- Eyebrow Pill -->
+    <rect x="0" y="0" width="288" height="22" rx="11" fill="#141424" stroke="#252542" stroke-width="1" />
+    <path d="M 14 11 L 20 5 L 18 11 L 24 11 L 16 19 L 18 13 L 13 13 Z" fill="#FF3B1D" />
+    <text x="32" y="15" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="700" fill="#FF7552" letter-spacing="1">
+      FULL STACK &amp; GENERATIVE AI SYSTEMS
+    </text>
 
-      <div class="terminal">
-        <div class="titlebar">
-          <div class="dot dot-red"></div>
-          <div class="dot dot-yellow"></div>
-          <div class="dot dot-green"></div>
-          <span class="titlebar-text">nithwin@github ~ /home/nithwin</span>
-        </div>
+    <!-- Main Title: NITHWIN V M -->
+    <text x="0" y="62" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="38" font-weight="900" fill="url(#titleGrad)" letter-spacing="-1">
+      NITHWIN V M
+    </text>
 
-        <div class="body">
-          <div class="left">
-            <div class="fade-in delay-1">
-              <span class="prompt">❯ </span><span class="cmd">whoami</span><span class="cursor-blink"></span>
-            </div>
+    <!-- Headline: Building intelligent software & scalable web systems -->
+    <text x="0" y="90" font-family="'Inter', -apple-system, system-ui, sans-serif" font-size="15" font-weight="600" fill="#E2E8F0">
+      Building <tspan fill="#00E5FF" font-weight="700">intelligent software</tspan> &amp; <tspan fill="#FF3B1D" font-weight="700">scalable web systems</tspan>.
+    </text>
 
-            <div class="fade-in delay-2" style="margin-top: 16px;">
-              <div class="name">Nithwin V M</div>
-              <div class="tagline">"I build systems, not just software."</div>
-            </div>
+    <!-- Technical Bio / Subtitle -->
+    <text x="0" y="112" font-family="'JetBrains Mono', monospace" font-size="11.5" fill="#8B8BA7" letter-spacing="0.2">
+      Crafting high-throughput Go APIs, C++20 systems, and autonomous GenAI tools.
+    </text>
 
-            <hr class="separator fade-in delay-3" />
+    <!-- Inner Terminal Interactive Execution Box -->
+    <rect x="0" y="132" width="622" height="116" rx="10" fill="#080810" stroke="#1A1A2E" stroke-width="1" />
 
-            <div class="output fade-in delay-3">
-              <span class="highlight">→</span> Backend &amp; Systems Engineer<br/>
-              <span class="highlight">→</span> Open Source Developer<br/>
-              <span class="highlight">→</span> IEEE Xplore Published Author<br/>
-              <span class="highlight">→</span> <span class="yellow">800+</span> LeetCode Problems Solved<br/>
-              <span class="highlight">→</span> CS Graduate <span class="dim">2026</span>
-            </div>
+    <!-- Terminal Command Line 1 -->
+    <text x="16" y="156" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">
+      <tspan fill="#00E5FF">❯</tspan>
+      <tspan fill="#FF3B1D"> go run</tspan>
+      <tspan fill="#E2E8F0"> github.com/Nithwin/windmist@v1.0.1 --agentic</tspan>
+    </text>
 
-            <hr class="separator fade-in delay-4" />
+    <!-- Terminal Output Line 2 -->
+    <text x="28" y="178" font-family="'JetBrains Mono', monospace" font-size="11" fill="#8B8BA7">
+      <tspan fill="#10B981">✓</tspan>
+      <tspan fill="#CBD5E1"> Gemini 2.5 Pro 1M AST Engine mounted</tspan>
+      <tspan fill="#475569"> │ </tspan>
+      <tspan fill="#00E5FF">Lip Gloss TUI: OK</tspan>
+    </text>
 
-            <div class="fade-in delay-5" style="font-size: 12px;">
-              <span class="status-dot"></span>
-              <span class="green">open to collaborate</span>
-              <span class="dim"> · </span>
-              <span class="cyan">open source contributor</span>
-            </div>
-          </div>
+    <!-- Terminal Command Line 3 -->
+    <text x="16" y="202" font-family="'JetBrains Mono', monospace" font-size="11.5" font-weight="600">
+      <tspan fill="#00E5FF">❯</tspan>
+      <tspan fill="#A855F7"> python3</tspan>
+      <tspan fill="#E2E8F0"> -m ca_yolov8.eval --dataset=ieee_testcards</tspan>
+    </text>
 
-          <div class="right">
-            <div class="fade-in delay-3">
-              <div class="output" style="margin-top: 0;">
-                <span class="prompt">❯ </span><span class="cmd">cat skills.conf</span>
-              </div>
-              <div style="margin-top: 12px;">
-                <div class="stat-row">
-                  <span class="stat-label">systems</span>
-                  <span class="cyan">Go · C++ · Linux</span>
-                </div>
-                <div class="stat-row">
-                  <span class="stat-label">cloud</span>
-                  <span class="cyan">GCP · Docker · K8s</span>
-                </div>
-                <div class="stat-row">
-                  <span class="stat-label">backend</span>
-                  <span class="cyan">Node · Express · PostgreSQL</span>
-                </div>
-                <div class="stat-row">
-                  <span class="stat-label">ai</span>
-                  <span class="cyan">LLMs · RAG · MCP · LangChain</span>
-                </div>
-                <div class="stat-row">
-                  <span class="stat-label">frontend</span>
-                  <span class="cyan">React · Next.js · TypeScript</span>
-                </div>
-              </div>
-            </div>
-
-            <hr class="separator fade-in delay-4" />
-
-            <div class="fade-in delay-5">
-              <div class="output" style="margin-top: 0;">
-                <span class="prompt">❯ </span><span class="cmd">cat languages.log</span>
-              </div>
-              <div style="margin-top: 10px;">
-                <div class="stat-row">
-                  <span class="stat-label">Go</span>
-                  <span class="cyan">████████████████░░░░</span>
-                </div>
-                <div class="stat-row">
-                  <span class="stat-label">C++</span>
-                  <span class="highlight">█████████████░░░░░░░</span>
-                </div>
-                <div class="stat-row">
-                  <span class="stat-label">Python</span>
-                  <span class="yellow">███████████░░░░░░░░░</span>
-                </div>
-                <div class="stat-row">
-                  <span class="stat-label">TypeScript</span>
-                  <span class="green">████████░░░░░░░░░░░░</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+    <!-- Terminal Output Line 4 with Blinking Cursor -->
+    <text x="28" y="224" font-family="'JetBrains Mono', monospace" font-size="11" fill="#8B8BA7">
+      <tspan fill="#F59E0B">★</tspan>
+      <tspan fill="#CBD5E1"> IEEE Xplore 2026: Coordinate Attention mAP50=0.942, EER=0.58%</tspan>
+      <tspan class="cursor" fill="#00E5FF"> █</tspan>
+    </text>
+  </g>
 </svg>

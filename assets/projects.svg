@@ -1,129 +1,140 @@
-<svg fill="none" viewBox="0 0 900 200" width="900" height="200" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+<svg fill="none" viewBox="0 0 900 230" width="100%" height="230" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Card Gradients -->
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="210" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B0B14" />
+      <stop offset="100%" stop-color="#06060A" />
+    </linearGradient>
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+    <!-- Project 1: WindMist (Go / Cyan / Electric Red) -->
+    <linearGradient id="p1Border" x1="0" y1="0" x2="280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00ADD8" />
+      <stop offset="100%" stop-color="#00E5FF" />
+    </linearGradient>
 
-        .grid {
-          display: flex;
-          gap: 12px;
-          font-family: 'JetBrains Mono', monospace;
-        }
+    <!-- Project 2: CA-YOLOv8 (Neural / IEEE / Purple & Gold) -->
+    <linearGradient id="p2Border" x1="0" y1="0" x2="280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8B5CF6" />
+      <stop offset="100%" stop-color="#EC4899" />
+    </linearGradient>
 
-        .card {
-          flex: 1;
-          background: #0a0a0f;
-          border: 1px solid #1a1a2e;
-          border-radius: 10px;
-          padding: 16px 18px;
-          transition: border-color 0.3s;
-          position: relative;
-          overflow: hidden;
-          animation: slideUp 0.6s ease-out forwards;
-          opacity: 0;
-        }
+    <!-- Project 3: AmmuBus (Transit / Orange / Amber) -->
+    <linearGradient id="p3Border" x1="0" y1="0" x2="280" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF3B1D" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
 
-        .card:nth-child(1) { animation-delay: 0.1s; }
-        .card:nth-child(2) { animation-delay: 0.3s; }
-        .card:nth-child(3) { animation-delay: 0.5s; }
+    <filter id="pGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
 
-        @keyframes slideUp {
-          from { transform: translateY(10px); opacity: 0; }
-          to { transform: translateY(0); opacity: 1; }
-        }
+  <!-- ================= CARD 1: WindMist v1.0.1 ================= -->
+  <g transform="translate(6, 6)">
+    <rect x="0" y="0" width="282" height="216" rx="12" fill="url(#cardBg)" stroke="#1A1A2E" stroke-width="1.5" />
+    <path d="M 0 12 Q 0 0 12 0 L 270 0 Q 282 0 282 12 L 282 14 L 0 14 Z" fill="url(#p1Border)" />
+    
+    <!-- Icon & Badge -->
+    <text x="20" y="44" font-family="'JetBrains Mono', monospace" font-size="20">⚡</text>
+    <rect x="180" y="28" width="82" height="20" rx="10" fill="#00E5FF" fill-opacity="0.12" stroke="#00E5FF" stroke-width="1" />
+    <text x="221" y="41.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#00E5FF">GO 1.26 · AI</text>
 
-        .card::before {
-          content: '';
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          height: 2px;
-          border-radius: 10px 10px 0 0;
-        }
+    <!-- Title -->
+    <text x="20" y="74" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">WindMist v1.0.1</text>
+    <text x="20" y="92" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#00ADD8">Terminal Coding Assistant</text>
 
-        .card:nth-child(1)::before { background: linear-gradient(90deg, #00add8, #06b6d4); }
-        .card:nth-child(2)::before { background: linear-gradient(90deg, #7c3aed, #a78bfa); }
-        .card:nth-child(3)::before { background: linear-gradient(90deg, #f97316, #fbbf24); }
+    <!-- Description -->
+    <text x="20" y="118" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">
+      <tspan x="20" dy="0">High-performance AI CLI built in Go with</tspan>
+      <tspan x="20" dy="16">Gemini 2.5 Pro (1M context), atomic AST</tspan>
+      <tspan x="20" dy="16">patching engine &amp; dynamic Lip Gloss TUI.</tspan>
+    </text>
 
-        .card-icon { font-size: 18px; margin-bottom: 8px; }
+    <!-- Tags -->
+    <rect x="20" y="172" width="46" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="43" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#00E5FF">Go</text>
 
-        .card-title {
-          font-size: 13px;
-          font-weight: 700;
-          color: #e2e2f0;
-          margin-bottom: 4px;
-        }
+    <rect x="72" y="172" width="68" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="106" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">Gemini 2.5</text>
 
-        .card-desc {
-          font-size: 10px;
-          color: #6a6a8a;
-          line-height: 1.6;
-          margin-bottom: 10px;
-        }
+    <rect x="146" y="172" width="56" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="174" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">Docker</text>
 
-        .card-tags {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 4px;
-        }
+    <rect x="208" y="172" width="54" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="235" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">TUI</text>
+  </g>
 
-        .tag {
-          font-size: 9px;
-          padding: 2px 8px;
-          border-radius: 4px;
-          background: #12121f;
-          border: 1px solid #1a1a2e;
-        }
+  <!-- ================= CARD 2: CA-YOLOv8 (IEEE 2026) ================= -->
+  <g transform="translate(309, 6)">
+    <rect x="0" y="0" width="282" height="216" rx="12" fill="url(#cardBg)" stroke="#1A1A2E" stroke-width="1.5" />
+    <path d="M 0 12 Q 0 0 12 0 L 270 0 Q 282 0 282 12 L 282 14 L 0 14 Z" fill="url(#p2Border)" />
 
-        .tag-go { color: #06b6d4; border-color: #06b6d422; }
-        .tag-ai { color: #a78bfa; border-color: #a78bfa22; }
-        .tag-k8s { color: #326ce5; border-color: #326ce522; }
-        .tag-next { color: #e2e2f0; border-color: #e2e2f022; }
-        .tag-ws { color: #34d399; border-color: #34d39922; }
-        .tag-cv { color: #fbbf24; border-color: #fbbf2422; }
-        .tag-cpp { color: #659ad2; border-color: #659ad222; }
-        .tag-docker { color: #2496ed; border-color: #2496ed22; }
-        .tag-ieee { color: #f97316; border-color: #f9731622; }
-      </style>
+    <!-- Icon & Badge -->
+    <text x="20" y="44" font-family="'JetBrains Mono', monospace" font-size="20">👁️</text>
+    <rect x="172" y="28" width="90" height="20" rx="10" fill="#8B5CF6" fill-opacity="0.12" stroke="#8B5CF6" stroke-width="1" />
+    <text x="217" y="41.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#A78BFA">IEEE XPLORE '26</text>
 
-      <div class="grid">
-        <div class="card">
-          <div class="card-icon">⚡</div>
-          <div class="card-title">WindMist</div>
-          <div class="card-desc">Autonomous AI coding assistant with RAG engine, MCP sub-agents, and Telegram remote control</div>
-          <div class="card-tags">
-            <span class="tag tag-go">Go</span>
-            <span class="tag tag-ai">RAG</span>
-            <span class="tag tag-ai">MCP</span>
-            <span class="tag tag-docker">Docker</span>
-          </div>
-        </div>
+    <!-- Title -->
+    <text x="20" y="74" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">CA-YOLOv8 Detection</text>
+    <text x="20" y="92" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#A78BFA">Coordinate Attention Vision</text>
 
-        <div class="card">
-          <div class="card-icon">🛡️</div>
-          <div class="card-title">ShadowCoders</div>
-          <div class="card-desc">Anti-cheating exam platform serving 400+ users with real-time WebSocket sync &amp; AI grading</div>
-          <div class="card-tags">
-            <span class="tag tag-next">Next.js</span>
-            <span class="tag tag-ws">Socket.IO</span>
-            <span class="tag tag-ai">Gemini</span>
-          </div>
-        </div>
+    <!-- Description -->
+    <text x="20" y="118" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">
+      <tspan x="20" dy="0">Novel YOLOv8 neural architecture</tspan>
+      <tspan x="20" dy="16">integrating Coordinate Attention &amp; CBAM</tspan>
+      <tspan x="20" dy="16">for real-time ID verification (0.58 EER).</tspan>
+    </text>
 
-        <div class="card">
-          <div class="card-icon">🔬</div>
-          <div class="card-title">CA-YOLOv8</div>
-          <div class="card-desc">Custom attention-based object detection model — published in IEEE Xplore 2025</div>
-          <div class="card-tags">
-            <span class="tag tag-cv">Python</span>
-            <span class="tag tag-cv">YOLOv8</span>
-            <span class="tag tag-ieee">IEEE</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+    <!-- Tags -->
+    <rect x="20" y="172" width="62" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="51" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#EC4899">PyTorch</text>
+
+    <rect x="88" y="172" width="58" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="117" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">YOLOv8</text>
+
+    <rect x="152" y="172" width="56" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="180" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">OpenCV</text>
+
+    <rect x="214" y="172" width="48" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="238" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">Flask</text>
+  </g>
+
+  <!-- ================= CARD 3: AmmuBus Platform ================= -->
+  <g transform="translate(612, 6)">
+    <rect x="0" y="0" width="282" height="216" rx="12" fill="url(#cardBg)" stroke="#1A1A2E" stroke-width="1.5" />
+    <path d="M 0 12 Q 0 0 12 0 L 270 0 Q 282 0 282 12 L 282 14 L 0 14 Z" fill="url(#p3Border)" />
+
+    <!-- Icon & Badge -->
+    <text x="20" y="44" font-family="'JetBrains Mono', monospace" font-size="20">🚌</text>
+    <rect x="176" y="28" width="86" height="20" rx="10" fill="#FF3B1D" fill-opacity="0.12" stroke="#FF3B1D" stroke-width="1" />
+    <text x="219" y="41.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="700" fill="#FF7552">PRODUCTION</text>
+
+    <!-- Title -->
+    <text x="20" y="74" font-family="'Inter', sans-serif" font-size="16" font-weight="800" fill="#FFFFFF">AmmuBus Booking</text>
+    <text x="20" y="92" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="600" fill="#F59E0B">Tourist Bus Platform</text>
+
+    <!-- Description -->
+    <text x="20" y="118" font-family="'Inter', sans-serif" font-size="11" fill="#94A3B8">
+      <tspan x="20" dy="0">High-concurrency booking engine for</tspan>
+      <tspan x="20" dy="16">tourist buses across 126+ Indian cities</tspan>
+      <tspan x="20" dy="16">with live interactive seat lockouts.</tspan>
+    </text>
+
+    <!-- Tags -->
+    <rect x="20" y="172" width="56" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="48" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#FF7552">React</text>
+
+    <rect x="82" y="172" width="68" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="116" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">Full-Stack</text>
+
+    <rect x="156" y="172" width="56" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="184" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">Node.js</text>
+
+    <rect x="218" y="172" width="44" height="22" rx="6" fill="#131322" stroke="#23233A" stroke-width="1" />
+    <text x="240" y="186.5" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="9.5" font-weight="600" fill="#CBD5E1">SQL</text>
+  </g>
 </svg>

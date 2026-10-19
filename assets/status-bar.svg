@@ -1,95 +1,92 @@
-<svg fill="none" viewBox="0 0 900 65" width="900" height="65" xmlns="http://www.w3.org/2000/svg">
-  <foreignObject width="100%" height="100%">
-    <div xmlns="http://www.w3.org/1999/xhtml">
-      <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;display=swap');
+<svg fill="none" viewBox="0 0 900 68" width="100%" height="68" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="barBg" x1="0" y1="0" x2="900" y2="68" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#080810" />
+      <stop offset="50%" stop-color="#0D0D18" />
+      <stop offset="100%" stop-color="#07070C" />
+    </linearGradient>
 
-        * { margin: 0; padding: 0; box-sizing: border-box; }
+    <linearGradient id="barBorder" x1="0" y1="0" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#00E5FF;#FF3B1D;#9D4EDD;#00E5FF" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="50%" stop-color="#FF3B1D" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#FF3B1D;#00E5FF;#FF3B1D;#9D4EDD" dur="6s" repeatCount="indefinite" />
+      </stop>
+      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0.8">
+        <animate attributeName="stop-color" values="#00E5FF;#9D4EDD;#00E5FF;#FF3B1D" dur="6s" repeatCount="indefinite" />
+      </stop>
+    </linearGradient>
 
-        .bar {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 14px;
-          background: #0a0a0f;
-          border: 1px solid #1a1a2e;
-          border-radius: 10px;
-          padding: 14px 24px;
-          font-family: 'JetBrains Mono', monospace;
-          animation: fadeIn 1s ease-out forwards;
-        }
+    <filter id="dotGlow">
+      <feGaussianBlur stdDeviation="2" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
 
-        @keyframes fadeIn {
-          from { opacity: 0; transform: translateY(5px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
+  <style>
+    @keyframes ping {
+      0% { r: 3.5; opacity: 1; }
+      70% { r: 9; opacity: 0; }
+      100% { r: 9; opacity: 0; }
+    }
+    .radar-wave {
+      animation: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  </style>
 
-        .divider {
-          width: 1px;
-          height: 20px;
-          background: #1a1a2e;
-        }
+  <!-- Container -->
+  <rect x="2" y="2" width="896" height="64" rx="10" fill="url(#barBg)" stroke="#1A1A2E" stroke-width="1.5" />
+  <rect x="2" y="2" width="896" height="64" rx="10" fill="none" stroke="url(#barBorder)" stroke-width="1" stroke-opacity="0.6" />
 
-        .item {
-          display: flex;
-          align-items: center;
-          gap: 6px;
-          font-size: 11px;
-          color: #6a6a8a;
-          text-decoration: none;
-        }
+  <!-- Item 1: Location -->
+  <g transform="translate(24, 0)">
+    <text x="0" y="38" font-family="'JetBrains Mono', monospace" font-size="14">📍</text>
+    <text x="24" y="34" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#64748B" letter-spacing="0.5">LOCATION</text>
+    <text x="24" y="48" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#E2E8F0">Tamil Nadu, IN</text>
+  </g>
 
-        .item-icon { font-size: 14px; }
+  <!-- Divider 1 -->
+  <line x1="184" y1="18" x2="184" y2="50" stroke="#1E1E34" stroke-width="1" />
 
-        .item-label { color: #8b8baa; }
-        .item-value { color: #a78bfa; font-weight: 700; }
-        .item-value-cyan { color: #06b6d4; font-weight: 700; }
-        .item-value-green { color: #34d399; font-weight: 700; }
-        .item-value-yellow { color: #fbbf24; font-weight: 700; }
+  <!-- Item 2: Education -->
+  <g transform="translate(204, 0)">
+    <text x="0" y="38" font-family="'JetBrains Mono', monospace" font-size="14">🎓</text>
+    <text x="24" y="34" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#64748B" letter-spacing="0.5">DEGREE</text>
+    <text x="24" y="48" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#A855F7">B.E. CSE '26</text>
+  </g>
 
-        .status-dot {
-          width: 6px;
-          height: 6px;
-          border-radius: 50%;
-          background: #34d399;
-          animation: pulse 2s ease-in-out infinite;
-        }
+  <!-- Divider 2 -->
+  <line x1="344" y1="18" x2="344" y2="50" stroke="#1E1E34" stroke-width="1" />
 
-        @keyframes pulse {
-          0%, 100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.4); }
-          50% { box-shadow: 0 0 0 4px rgba(52, 211, 153, 0); }
-        }
-      </style>
+  <!-- Item 3: LeetCode -->
+  <g transform="translate(364, 0)">
+    <text x="0" y="38" font-family="'JetBrains Mono', monospace" font-size="14">⚡</text>
+    <text x="24" y="34" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#64748B" letter-spacing="0.5">LEETCODE</text>
+    <text x="24" y="48" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#F59E0B">800+ Solved</text>
+  </g>
 
-      <div class="bar">
-        <div class="item">
-          <span class="item-icon">📍</span>
-          <span class="item-label">Tamil Nadu, India</span>
-        </div>
-        <div class="divider"></div>
-        <div class="item">
-          <span class="item-icon">🎓</span>
-          <span class="item-label">CS</span>
-          <span class="item-value">2026</span>
-        </div>
-        <div class="divider"></div>
-        <div class="item">
-          <span class="item-icon">🧠</span>
-          <span class="item-label">LeetCode</span>
-          <span class="item-value-yellow">800+</span>
-        </div>
-        <div class="divider"></div>
-        <div class="item">
-          <span class="item-icon">📄</span>
-          <span class="item-label">IEEE</span>
-          <span class="item-value-cyan">Published</span>
-        </div>
-        <div class="divider"></div>
-        <div class="item">
-          <div class="status-dot"></div>
-          <span class="item-value-green">open to opportunities</span>
-        </div>
-      </div>
-    </div>
-  </foreignObject>
+  <!-- Divider 3 -->
+  <line x1="514" y1="18" x2="514" y2="50" stroke="#1E1E34" stroke-width="1" />
+
+  <!-- Item 4: Research -->
+  <g transform="translate(534, 0)">
+    <text x="0" y="38" font-family="'JetBrains Mono', monospace" font-size="14">📜</text>
+    <text x="24" y="34" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#64748B" letter-spacing="0.5">RESEARCH</text>
+    <text x="24" y="48" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#00E5FF">IEEE Published</text>
+  </g>
+
+  <!-- Divider 4 -->
+  <line x1="684" y1="18" x2="684" y2="50" stroke="#1E1E34" stroke-width="1" />
+
+  <!-- Item 5: Status -->
+  <g transform="translate(704, 0)">
+    <circle cx="8" cy="38" r="3.5" fill="#10B981" filter="url(#dotGlow)" />
+    <circle class="radar-wave" cx="8" cy="38" r="4" fill="none" stroke="#10B981" stroke-width="1.5" />
+    <text x="24" y="34" font-family="'JetBrains Mono', monospace" font-size="9" font-weight="600" fill="#64748B" letter-spacing="0.5">STATUS</text>
+    <text x="24" y="48" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" fill="#10B981">Open To Work</text>
+  </g>
 </svg>
