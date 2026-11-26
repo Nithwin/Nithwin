@@ -13,6 +13,6 @@
 
 <br/>
 
-<img src="https://skillicons.dev/icons?i=go,cpp,py,ts,react,nextjs,nodejs,postgres,redis,docker,kubernetes,pytorch,numpy,sklearn,tensorflow,fedora,supabase,linux&theme=dark" alt="Skills" />
+<img src="https://skillicons.dev/icons?i=go,cpp,py,ts,react,nextjs,nodejs,postgres,redis,docker,kubernetes,pytorch,sklearn,tensorflow,fedora,supabase,linux&theme=dark" alt="Skills" />
 
 </div>
